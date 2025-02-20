@@ -1,0 +1,15 @@
+Let's break down the logic:
+
+* **(a) is true:** This tells us that (b) is also true, and either (c) or (d) is true, but not both.
+
+* **(b) is true:**  This means the hand contains either a king *or* a queen (or possibly both).
+
+* **Consider the possibilities:**
+
+    * **Scenario 1: The hand has a queen.** If (c) is true (and therefore (d) is false), then *if* there's a queen, there *must* be an ace.  If (d) is false, then *if* there's a king, there is *not* an ace. Since (b) is true, and we have a queen, we know there is an ace.
+
+    * **Scenario 2: The hand has a king.** If (d) is true (and therefore (c) is false), then *if* there's a king, there *must* be an ace. If (c) is false, then *if* there's a queen there is *not* an ace. Since (b) is true and we have a king, we know there is an ace.
+
+* **Conclusion:** In either scenario (queen or king), the presence of either implies the presence of an ace.
+
+Therefore, the correct answer is: **1. There is an ace in the hand.**
